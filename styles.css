@@ -1,18 +1,103 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto+Flex:opsz@8..144&family=VT323&display=swap');
 
-.header {
-  border: 2px solid red;
+* {
+  font-family: VT323, Roboto, Nunito, "sans-serif";
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .nav {
-  border: 3px solid green;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.logoImage {
-  border: 3px solid green;
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 500px;
+  padding: 0;
+}
+
+.nav ul .icon_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav ul .icon_link .pixel_arrow {
+  visibility: hidden;
+  margin-right: 10px;
+}
+
+.nav ul .icon_link:hover .pixel_arrow {
+  visibility: visible;
+}
+
+.nav ul li {
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.nav ul li:hover {
+  color: #C45E5E;
+}
+
+.pixel_logo {
+  height: auto;
+  width: 150px;
+}
+
+.pixel_arrow {
+  height: 20px;
+}
+
+.legacy .parallax_svg{
+  background-image: url(./images/new_game-cropped.svg);
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_text {
+  border: 5px solid black;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: auto;
+  background-color: rgba(21, 21, 21, .95);
+}
+
+.hero_text .hero_text_statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+}
+
+.hero_text p {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.hero_text button {
+  font-size: 25px;
+  border: 3px solid black;
+  background-color: #C45E5E;
+  padding: 5px 10px;
 }
