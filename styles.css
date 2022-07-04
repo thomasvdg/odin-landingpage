@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto+Flex:opsz@8..144&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Press+Start+2P&family=Roboto+Flex:opsz@8..144&display=swap');
+
+
 
 * {
-  font-family: VT323, Roboto, Nunito, "sans-serif";
+  font-family: "Press Start 2P", Roboto, Nunito, "sans-serif";
   box-sizing: border-box;
   margin: 0;
+  cursor: url(./images/cursor_nobg.png) 1 1, auto;
 }
 
 .nav {
-  background-color: #000000;
+  background-color: #151515;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -34,22 +37,27 @@
   margin-right: 10px;
 }
 
+.icon_link, .pixel_arrow, .list_link {
+  cursor: url(./images/link_cursor_nobg.png) 14 1, pointer;
+}
+
 .nav ul .icon_link:hover .pixel_arrow {
   visibility: visible;
 }
 
-.nav ul li {
-  font-size: 30px;
+.nav ul .list_link {
+  font-size: 15px;
   color: whitesmoke;
 }
 
-.nav ul li:hover {
+.nav ul .list_link:hover {
   color: #C45E5E;
 }
 
 .pixel_logo {
   height: auto;
   width: 150px;
+  cursor: url(./images/link_cursor_nobg.png) 14 1, pointer;
 }
 
 .pixel_arrow {
@@ -76,9 +84,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 50px;
-  margin-top: 100px;
-  margin-bottom: auto;
-  background-color: rgba(21, 21, 21, .95);
+  
 }
 
 .hero_text .hero_text_statement {
@@ -91,13 +97,14 @@
 
 .hero_text p {
   color: white;
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 35px;
 }
 
-.hero_text button {
-  font-size: 25px;
-  border: 3px solid black;
+.hero_text .wiki_link {
+  font-size: 15px;
   background-color: #C45E5E;
   padding: 5px 10px;
+  box-shadow: 2px 0px 0px 0px black, 0px 2px 0px 0px black, 0px -2px 0px 0px black, -2px 0px 0px 0px black;
+  cursor: url(./images/link_cursor_nobg.png) 14 1, pointer;
 }
