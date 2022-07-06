@@ -14,6 +14,9 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav ul {
@@ -30,6 +33,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  padding: 8px;
 }
 
 .nav ul .icon_link .pixel_arrow {
@@ -65,9 +69,10 @@
 }
 
 .legacy .parallax_svg{
-  background-image: url(./images/new_game-cropped.svg);
+  background-image: url(./images/Space_Invaders_wallpaper.jpg);
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background-attachment: fixed;
   background-position:center;
   background-repeat: no-repeat;
@@ -78,33 +83,37 @@
 }
 
 .hero_text {
-  border: 5px solid black;
   width: 50%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 50px;
+  align-items: flex-start;
   
 }
 
 .hero_text .hero_text_statement {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 70%;
+  box-shadow: 0px 0px 0px 0px black, 0px 3px 0px 0px black, 0px -3px 0px 0px black, -3px 0px 0px 0px black;
+  background-color: whitesmoke;
+  padding: 25px 50px;
 }
 
 .hero_text p {
-  color: white;
+  color: black;
   font-size: 15px;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .hero_text .wiki_link {
   font-size: 15px;
   background-color: #C45E5E;
   padding: 5px 10px;
-  box-shadow: 2px 0px 0px 0px black, 0px 2px 0px 0px black, 0px -2px 0px 0px black, -2px 0px 0px 0px black;
+  box-shadow: 3px 0px 0px 0px black, 0px 3px 0px 0px black, 0px -3px 0px 0px black, -3px 0px 0px 0px black;
   cursor: url(./images/link_cursor_nobg.png) 14 1, pointer;
+}
+
+.hero_text_img {
+  box-shadow: 3px 0px 0px 0px black, 0px 3px 0px 0px black, 0px -3px 0px 0px black, -3px 0px 0px 0px black;
 }
